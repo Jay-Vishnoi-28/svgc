@@ -66,7 +66,7 @@ function Gallery() {
         <div role="dialog" aria-modal="true" className="fixed inset-0 z-[60] grid place-items-center bg-navy-deep/95 p-4" onClick={() => setIdx(null)}>
           <button className="absolute right-5 top-5 text-primary-foreground" aria-label="Close"><X className="h-8 w-8" /></button>
           <button className="absolute left-3 text-primary-foreground" aria-label="Previous" onClick={(e) => { e.stopPropagation(); setIdx((idx - 1 + list.length) % list.length); }}><ChevronLeft className="h-10 w-10" /></button>
-          <img src={list[idx].src} alt={list[idx].alt} className="max-h-[85vh] max-w-full rounded-xl" onClick={(e) => e.stopPropagation()} />
+          <img src={list[idx]?.src} alt={list[idx]?.alt} className="max-h-[85vh] max-w-full rounded-xl" onClick={(e) => e.stopPropagation()} />
           <button className="absolute right-3 text-primary-foreground" aria-label="Next" onClick={(e) => { e.stopPropagation(); setIdx((idx + 1) % list.length); }}><ChevronRight className="h-10 w-10" /></button>
         </div>
       )}
