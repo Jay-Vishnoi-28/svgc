@@ -39,7 +39,7 @@ export function EnquiryForm({ title = "Admission Enquiry", withClass = true }: {
       <div className="rounded-2xl border bg-card p-10 text-center shadow-soft">
         <CheckCircle2 className="mx-auto h-12 w-12 text-gold" />
         <h3 className="mt-4 text-2xl font-semibold text-primary">Thank you!</h3>
-        <p className="mt-2 text-muted-foreground">Your enquiry has been noted. The school office will contact you soon.</p>
+        <p className="mt-2 text-muted-foreground">Your enquiry has been noted. The college office will contact you soon.</p>
         <button onClick={() => setSent(false)} className="btn-navy mt-6">Send another</button>
       </div>
     );
@@ -64,7 +64,7 @@ export function EnquiryForm({ title = "Admission Enquiry", withClass = true }: {
           <Err k="email" />
         </label>
         {withClass && (
-          <label className="text-sm font-semibold">Class applying for *
+          <label className="text-sm font-semibold">Course applying for *
             <select className={field} value={data.className} onChange={set("className")}>
               <option value="">Select class</option>
               {CLASSES.map((c) => <option key={c}>{c}</option>)}

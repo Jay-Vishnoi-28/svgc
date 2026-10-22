@@ -18,7 +18,7 @@ function Activities() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <FeatureCard icon={<Trophy />} title="Sports" text="Outdoor and indoor games that build fitness and sportsmanship." />
           <FeatureCard icon={<FlaskConical />} title="Science Exhibitions" text="Students present models and experiments to showcase innovation." />
-          <FeatureCard icon={<Brain />} title="Quizzes" text="Inter-house and inter-school quizzes to sharpen knowledge." />
+          <FeatureCard icon={<Brain />} title="Quizzes" text="Inter-house and inter-college quizzes to sharpen knowledge." />
           <FeatureCard icon={<Mic />} title="Debates" text="Public speaking that builds reasoning and confidence." />
           <FeatureCard icon={<Music />} title="Music" text="Vocal and instrumental music to nurture creativity." />
           <FeatureCard icon={<Sparkles />} title="Dance" text="Classical and folk dance performances." />

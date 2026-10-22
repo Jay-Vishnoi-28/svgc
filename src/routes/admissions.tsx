@@ -10,20 +10,20 @@ export const Route = createFileRoute("/admissions")({
   component: Admissions,
 });
 
-const STEPS = ["Submit an enquiry online or visit the school office", "Collect and fill the admission form", "Submit required documents", "Interaction / assessment (as applicable)", "Confirmation and fee deposit"];
-const DOCS = ["Birth certificate", "Transfer Certificate (TC) from previous school", "Previous year report card / mark sheet", "Recent passport-size photographs", "Aadhaar card of student and parents", "Address proof"];
+const STEPS = ["Submit an enquiry online or visit the college office", "Collect and fill the admission form", "Submit required documents", "Document verification / counselling (as applicable)", "Confirmation and fee deposit"];
+const DOCS = ["Class 12 / graduation mark sheets", "Transfer Certificate (TC) & Migration Certificate", "Caste / income certificate (if applicable)", "Recent passport-size photographs", "Aadhaar card of student and parents", "Address proof"];
 const FAQ = [
-  ["Which classes are admissions open for?", "SVPS offers education from Pre-Nursery to Class 12. Please contact the school office to confirm seat availability."],
-  ["Which board is the school affiliated to?", `The school is affiliated to CBSE, affiliation number ${SITE.affiliation}.`],
-  ["What is the fee structure?", "Please contact the school office for the current fee structure."],
-  ["Is transport available?", "Please contact the school office for transport routes and availability."],
-  ["What is the age criteria?", "Age eligibility follows CBSE and state guidelines. The office will confirm the criteria for each class."],
+  ["Which courses are admissions open for?", "SVC offers undergraduate and postgraduate courses. Please contact the college office to confirm seat availability."],
+  ["Which university is the college affiliated to?", "Please contact the college office for affiliation details."],
+  ["What is the fee structure?", "Please contact the college office for the current fee structure."],
+  ["Is transport available?", "Please contact the college office for transport routes and availability."],
+  ["What is the eligibility?", "UG courses require Class 12 pass; PG courses require a relevant graduation degree. The office will confirm criteria for each course."],
 ];
 
 function Admissions() {
   return (
     <>
-      <PageHero eyebrow="Admissions" title="Begin your journey with SVPS" text="Pre-Nursery to Class 12 · CBSE" />
+      <PageHero eyebrow="Admissions" title="Begin your journey with SVC" text="Undergraduate & Postgraduate Courses" />
       <Section>
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
@@ -40,7 +40,7 @@ function Admissions() {
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
               {DOCS.map((d) => <li key={d} className="flex gap-2 text-sm"><CheckCircle2 className="h-5 w-5 shrink-0 text-gold" />{d}</li>)}
             </ul>
-            <div className="mt-8"><Placeholder>Confirm eligibility rules and the exact document list with the school office.</Placeholder></div>
+            <div className="mt-8"><Placeholder>Confirm eligibility rules and the exact document list with the college office.</Placeholder></div>
           </div>
           <div><EnquiryForm /></div>
         </div>

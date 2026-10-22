@@ -14,7 +14,7 @@ export function Logo({ light = false }: { light?: boolean }) {
           {SITE.short} Khategaon
         </span>
         <span className={`block text-[11px] font-semibold uppercase tracking-wider ${light ? "text-primary-foreground/70" : "text-muted-foreground"}`}>
-          CBSE Aff. No. {SITE.affiliation}
+          UG & PG College · Khategaon
         </span>
       </span>
     </Link>
