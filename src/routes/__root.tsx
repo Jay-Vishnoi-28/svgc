@@ -80,8 +80,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Shri Vidhya Sagar Public School, Khategaon" },
-      { name: "description", content: "CBSE-affiliated school in Khategaon, Dewas (MP), established 1997." },
+      { title: "Shri Vidhya Sagar College, Khategaon" },
+      { name: "description", content: "College in Khategaon, Dewas (MP) offering UG and PG courses, established 1997." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

@@ -22,7 +22,7 @@ function Contact() {
               <SocialLinks className="mt-6" />
             </div>
             <div className="overflow-hidden rounded-2xl border">
-              <iframe title="School location map" loading="lazy" className="h-80 w-full"
+              <iframe title="College location map" loading="lazy" className="h-80 w-full"
                 src={`https://www.google.com/maps?q=${encodeURIComponent(SITE.mapQuery)}&output=embed`} />
             </div>
           </div>

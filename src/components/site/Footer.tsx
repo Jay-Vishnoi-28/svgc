@@ -45,7 +45,7 @@ export function Footer() {
         <div className="space-y-4">
           <Logo light />
           <p className="text-sm text-primary-foreground/75">
-            {SITE.name} — a CBSE-affiliated school serving Khategaon and nearby communities since {SITE.established}.
+            {SITE.name} — a college serving Khategaon and nearby communities since {SITE.established}.
           </p>
           <SocialLinks />
         </div>
@@ -63,14 +63,14 @@ export function Footer() {
         </div>
         <div>
           <h3 className="mb-4 text-lg font-semibold text-gold">Admissions Open</h3>
-          <p className="mb-5 text-sm text-primary-foreground/75">Pre-Nursery to Class 12. Send us an enquiry and our office will get in touch.</p>
+          <p className="mb-5 text-sm text-primary-foreground/75">UG & PG courses. Send us an enquiry and our office will get in touch.</p>
           <Link to="/admissions" className="btn-gold">Apply for Admission</Link>
         </div>
       </div>
       <div className="border-t border-primary-foreground/15">
         <div className="container-x flex flex-col gap-2 py-5 text-xs text-primary-foreground/60 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
-          <p>CBSE Affiliation No. {SITE.affiliation} · Principal: {SITE.principal}</p>
+          <p>Principal: {SITE.principal}</p>
         </div>
       </div>
     </footer>
@@ -79,7 +79,7 @@ export function Footer() {
 
 export function WhatsAppButton() {
   const href = SITE.whatsapp
-    ? `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent("Hello SVPS, I would like to enquire about admissions.")}`
+    ? `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent("Hello SVC, I would like to enquire about admissions.")}`
     : "/contact";
   return (
     <a href={href} target={SITE.whatsapp ? "_blank" : undefined} rel="noopener noreferrer"

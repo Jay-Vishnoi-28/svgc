@@ -1,11 +1,11 @@
-// Central school details. Values marked PLACEHOLDER must be replaced with verified information.
+// Central college details. Values marked PLACEHOLDER must be replaced with verified information.
 export const SITE = {
-  name: "Shri Vidhya Sagar Public School",
-  short: "SVPS",
-  tagline: "Nurturing Minds, Building Character Since 1997",
+  name: "Shri Vidhya Sagar College",
+  short: "SVC",
+  tagline: "Empowering Higher Education in Khategaon Since 1997",
   established: 1997,
-  affiliation: "1030479",
-  board: "CBSE",
+  affiliation: "To be updated",
+  board: "University-affiliated",
   principal: "Alok Jain",
   address: "Khategaon, Dewas, Madhya Pradesh, India",
   phone: "", // PLACEHOLDER: add verified phone, e.g. "+91XXXXXXXXXX"
@@ -18,7 +18,7 @@ export const SITE = {
     instagram:
       "https://www.instagram.com/explore/locations/1613990498892380/vidhya-sagar-college-khategaon/",
   },
-  mapQuery: "Shri Vidhya Sagar Public School Khategaon Dewas",
+  mapQuery: "Shri Vidhya Sagar College Khategaon Dewas",
 };
 
 export const NAV = [

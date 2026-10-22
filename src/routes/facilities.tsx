@@ -16,7 +16,7 @@ const ITEMS = [
   { title: "Classrooms", img: hero, text: "Spacious, well-lit classrooms designed for focused learning." },
   { title: "Laboratories", img: lab, text: "Science laboratories for practical, hands-on experiments." },
   { title: "IT Infrastructure", img: lab, text: "Computer education to build digital skills." },
-  { title: "Transport", img: hero, text: "School transport for students from surrounding areas." },
+  { title: "Transport", img: hero, text: "College transport for students from surrounding areas." },
   { title: "Playground", img: sports, text: "Open grounds for sports, games and assemblies." },
 ];
 

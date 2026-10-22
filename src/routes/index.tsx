@@ -8,7 +8,7 @@ import { SITE, pageHead } from "@/lib/site";
 import { FeatureCard, Section, SectionTitle } from "@/components/site/Blocks";
 
 export const Route = createFileRoute("/")({
-  head: () => pageHead("CBSE School", `${SITE.name} — CBSE-affiliated school (Aff. No. ${SITE.affiliation}) in Khategaon, Dewas, MP. Pre-Nursery to Class 12, since 1997.`),
+  head: () => pageHead("College in Khategaon", `${SITE.name} — college in Khategaon, Dewas, MP offering UG and PG courses in Arts, Commerce and Science since 1997.`),
   component: Index,
 });
 
@@ -20,14 +20,14 @@ function Index() {
         <img src={hero} alt="SVPS campus with students" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-hero-overlay" />
         <div className="container-x relative flex min-h-[88vh] flex-col justify-center py-24">
-          <p className="eyebrow animate-fade-up">Est. {SITE.established} · CBSE Affiliated · Khategaon</p>
+          <p className="eyebrow animate-fade-up">Est. {SITE.established} · Undergraduate & Postgraduate · Khategaon</p>
           <h1 className="mt-4 max-w-3xl animate-fade-up text-5xl font-semibold leading-[1.05] md:text-7xl">
-            Shri Vidhya Sagar <span className="italic text-gold">Public School</span>
+            Shri Vidhya Sagar <span className="italic text-gold">College</span>
           </h1>
           <p className="mt-6 max-w-xl animate-fade-up text-lg text-primary-foreground/85 md:text-xl">{SITE.tagline}</p>
           <div className="mt-10 flex flex-wrap gap-4 animate-fade-up">
             <Link to="/admissions" className="btn-gold">Apply for Admission <ArrowRight className="h-4 w-4" /></Link>
-            <Link to="/about" className="btn-outline-light">Explore Our School</Link>
+            <Link to="/about" className="btn-outline-light">Explore Our College</Link>
           </div>
         </div>
       </section>
@@ -36,8 +36,8 @@ function Index() {
         <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border bg-border shadow-soft md:grid-cols-4">
           {[
             [`${years}+`, "Years of Excellence"],
-            ["CBSE", `Aff. No. ${SITE.affiliation}`],
-            ["Pre-Nursery–12", "Classes Offered"],
+            ["UG & PG", "Degree Programmes"],
+            ["Arts · Commerce · Science", "Faculties"],
             ["Khategaon", "Dewas, Madhya Pradesh"],
           ].map(([a, b]) => (
             <div key={b} className="bg-card p-6 text-center">
@@ -57,8 +57,8 @@ function Index() {
           <div>
             <SectionTitle eyebrow="Welcome to SVPS" title="Where learning meets values" />
             <p className="text-muted-foreground leading-relaxed">
-              Since {SITE.established}, {SITE.name} has been a trusted centre of learning in Khategaon. Following the CBSE curriculum,
-              we nurture curiosity, discipline and character in every child — from their first steps in Pre-Nursery to their Class 12 board examinations.
+              Since {SITE.established}, {SITE.name} has been a trusted centre of learning in Khategaon. Through quality
+              undergraduate and postgraduate programmes, we prepare young people for careers, competitive exams and responsible citizenship.
             </p>
             <blockquote className="mt-8 border-l-4 border-gold pl-5">
               <p className="font-display text-lg italic text-primary">“Our aim is to help every student grow into a confident, responsible and caring citizen.”</p>
@@ -72,12 +72,12 @@ function Index() {
       <Section muted>
         <SectionTitle center eyebrow="Why SVPS" title="A complete education" text="Academics, activities and care — balanced for the whole child." />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <FeatureCard icon={<BookOpen />} title="CBSE Curriculum" text="Structured, nationally recognised learning from Pre-Nursery to Class 12." />
+          <FeatureCard icon={<BookOpen />} title="Degree Programmes" text="University-recognised courses in Arts, Commerce, Science and Computers." />
           <FeatureCard icon={<FlaskConical />} title="Hands-on Learning" text="Laboratories and projects that turn concepts into understanding." />
           <FeatureCard icon={<Trophy />} title="Sports & Activities" text="Sports, debates, quizzes, music, dance, art and cultural events." />
-          <FeatureCard icon={<Users />} title="Dedicated Teachers" text="Caring faculty who guide every student's growth." />
+          <FeatureCard icon={<Users />} title="Dedicated Teachers" text="Qualified professors who mentor students in and beyond the classroom." />
           <FeatureCard icon={<Award />} title="Values & Discipline" text="Character, respect and responsibility at the heart of school life." />
-          <FeatureCard icon={<Bus />} title="Safe Campus" text="A secure, supportive environment for children to learn and thrive." />
+          <FeatureCard icon={<Bus />} title="Safe Campus" text="A secure, supportive campus for students to learn and thrive." />
         </div>
       </Section>
 
@@ -87,8 +87,8 @@ function Index() {
           <div className="absolute inset-0 bg-hero-overlay" />
           <div className="relative max-w-xl p-10 md:p-16">
             <p className="eyebrow">Admissions Open</p>
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">Give your child the SVPS advantage</h2>
-            <p className="mt-4 text-primary-foreground/80">Enquire today for Pre-Nursery to Class 12.</p>
+            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">Build your future at SVC</h2>
+            <p className="mt-4 text-primary-foreground/80">Enquire today for undergraduate and postgraduate courses.</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link to="/admissions" className="btn-gold">Apply for Admission</Link>
               <Link to="/contact" className="btn-outline-light">Contact Us</Link>

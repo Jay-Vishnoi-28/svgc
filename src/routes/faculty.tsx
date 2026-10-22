@@ -4,13 +4,13 @@ import { SITE, pageHead } from "@/lib/site";
 import { PageHero, Placeholder, Section, SectionTitle } from "@/components/site/Blocks";
 
 export const Route = createFileRoute("/faculty")({
-  head: () => pageHead("Faculty", `Meet the teachers and staff of ${SITE.name}, Khategaon.`),
+  head: () => pageHead("Faculty", `Meet the professors and staff of ${SITE.name}, Khategaon.`),
   component: Faculty,
 });
 
-// PLACEHOLDER: replace with verified teacher details { name, qualification, subject, photo }
+// PLACEHOLDER: replace with verified professor details { name, qualification, subject, photo }
 const FACULTY = Array.from({ length: 8 }, (_, i) => ({
-  name: `Teacher Name ${i + 1}`,
+  name: `Professor Name ${i + 1}`,
   qualification: "Qualification",
   subject: "Subject",
 }));
@@ -18,7 +18,7 @@ const FACULTY = Array.from({ length: 8 }, (_, i) => ({
 function Faculty() {
   return (
     <>
-      <PageHero eyebrow="Faculty" title="Our dedicated educators" text="Experienced, caring teachers guiding every learner." />
+      <PageHero eyebrow="Faculty" title="Our dedicated educators" text="Experienced, dedicated professors guiding every learner." />
       <Section>
         <div className="mb-10"><Placeholder>Faculty profiles below are placeholders. Replace with verified names, qualifications, subjects and photos.</Placeholder></div>
         <div className="mb-12 rounded-2xl border bg-card p-7">

@@ -9,7 +9,7 @@ export const Route = createFileRoute("/achievements")({
 });
 
 const CATS = [
-  { icon: GraduationCap, title: "Board Examination Results", hint: "Class 10 & 12 CBSE results by year" },
+  { icon: GraduationCap, title: "University Examination Results", hint: "Semester and annual results by year" },
   { icon: Award, title: "Academic Achievements", hint: "Toppers, olympiads and scholarships" },
   { icon: Trophy, title: "Competitions", hint: "Sports, quiz, debate and science fair results" },
   { icon: Medal, title: "Student Awards", hint: "Recognitions and honours" },

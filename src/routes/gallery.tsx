@@ -13,9 +13,9 @@ export const Route = createFileRoute("/gallery")({
   component: Gallery,
 });
 
-// PLACEHOLDER images — replace with authentic school photos.
+// PLACEHOLDER images — replace with authentic college photos.
 const PHOTOS = [
-  { src: hero, cat: "Campus Life", alt: "School campus" },
+  { src: hero, cat: "Campus Life", alt: "College campus" },
   { src: lab, cat: "Campus Life", alt: "Science lab session" },
   { src: sports, cat: "Sports", alt: "Cricket on the ground" },
   { src: library, cat: "Campus Life", alt: "Library reading" },
@@ -44,7 +44,7 @@ function Gallery() {
     <>
       <PageHero eyebrow="Gallery" title="Moments at SVPS" />
       <Section>
-        <div className="mb-8"><Placeholder>Images shown are illustrative. Add real photographs of school events and campus.</Placeholder></div>
+        <div className="mb-8"><Placeholder>Images shown are illustrative. Add real photographs of college events and campus.</Placeholder></div>
         <div className="mb-8 flex flex-wrap gap-2">
           {CATS.map((c) => (
             <button key={c} onClick={() => setCat(c)}
