@@ -22,8 +22,8 @@ function Faculty() {
       <Section>
         <div className="mb-10"><Placeholder>Faculty profiles below are placeholders. Replace with verified names, qualifications, subjects and photos.</Placeholder></div>
         <div className="mb-12 rounded-2xl border bg-card p-7">
-          <p className="text-xs font-bold uppercase tracking-wider text-gold">Principal</p>
-          <h3 className="mt-1 text-2xl font-semibold text-primary">{SITE.principal}</h3>
+          <p className="text-xs font-bold uppercase tracking-wider text-gold">Director</p>
+          <h3 className="mt-1 text-2xl font-semibold text-primary">{SITE.director}</h3>
         </div>
         <SectionTitle eyebrow="Teaching Staff" title="Faculty members" />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

@@ -42,7 +42,7 @@ function Gallery() {
 
   return (
     <>
-      <PageHero eyebrow="Gallery" title="Moments at SVC" />
+      <PageHero eyebrow="Gallery" title="Moments at VIPS" />
       <Section>
         <div className="mb-8"><Placeholder>Images shown are illustrative. Add real photographs of college events and campus.</Placeholder></div>
         <div className="mb-8 flex flex-wrap gap-2">
