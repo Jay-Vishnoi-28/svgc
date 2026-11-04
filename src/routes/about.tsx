@@ -39,17 +39,17 @@ function About() {
         </div>
       </Section>
       <Section>
-        <SectionTitle eyebrow="Leadership" title="From the Principal's desk" />
+        <SectionTitle eyebrow="Leadership" title="From the Director's desk" />
         <div className="grid items-center gap-10 rounded-3xl border bg-card p-8 shadow-soft md:grid-cols-[200px_1fr] md:p-12">
           <div className="grid aspect-square place-items-center rounded-2xl bg-navy-gradient font-display text-5xl text-gold">AJ</div>
           <div>
-            <h3 className="text-2xl font-semibold text-primary">{SITE.principal}</h3>
-            <p className="text-sm font-semibold uppercase tracking-wider text-gold">Principal</p>
+            <h3 className="text-2xl font-semibold text-primary">{SITE.director}</h3>
+            <p className="text-sm font-semibold uppercase tracking-wider text-gold">Director</p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               Welcome to {SITE.name}. We believe every student is capable of greatness. We strive to give our
               students the knowledge, skills and values they need for life.
             </p>
-            <p className="mt-3 text-xs text-muted-foreground">Placeholder message — replace with the Principal's official message and photo.</p>
+            <p className="mt-3 text-xs text-muted-foreground">Placeholder message — replace with the Director's official message and photo.</p>
           </div>
         </div>
       </Section>
