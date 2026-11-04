@@ -70,7 +70,7 @@ export function Footer() {
       <div className="border-t border-primary-foreground/15">
         <div className="container-x flex flex-col gap-2 py-5 text-xs text-primary-foreground/60 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
-          <p>Principal: {SITE.principal}</p>
+          <p>Director: {SITE.director}</p>
         </div>
       </div>
     </footer>
@@ -79,7 +79,7 @@ export function Footer() {
 
 export function WhatsAppButton() {
   const href = SITE.whatsapp
-    ? `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent("Hello SVC, I would like to enquire about admissions.")}`
+    ? `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent("Hello VIPS, I would like to enquire about admissions.")}`
     : "/contact";
   return (
     <a href={href} target={SITE.whatsapp ? "_blank" : undefined} rel="noopener noreferrer"

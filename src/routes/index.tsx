@@ -8,7 +8,7 @@ import { SITE, pageHead } from "@/lib/site";
 import { FeatureCard, Section, SectionTitle } from "@/components/site/Blocks";
 
 export const Route = createFileRoute("/")({
-  head: () => pageHead("College in Khategaon", `${SITE.name} — college in Khategaon, Dewas, MP offering UG and PG courses in Arts, Commerce and Science since 1997.`),
+  head: () => pageHead("College in Khategaon", `${SITE.name} — college in Khategaon, Dewas, MP offering UG and PG courses in Arts, Commerce and Science since 2009.`),
   component: Index,
 });
 
@@ -17,12 +17,12 @@ function Index() {
   return (
     <>
       <section className="relative min-h-[88vh] overflow-hidden text-primary-foreground">
-        <img src={hero} alt="SVC campus with students" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover" />
+        <img src={hero} alt="VIPS campus with students" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-hero-overlay" />
         <div className="container-x relative flex min-h-[88vh] flex-col justify-center py-24">
           <p className="eyebrow animate-fade-up">Est. {SITE.established} · Undergraduate & Postgraduate · Khategaon</p>
-          <h1 className="mt-4 max-w-3xl animate-fade-up text-5xl font-semibold leading-[1.05] md:text-7xl">
-            Shri Vidhya Sagar <span className="italic text-gold">College</span>
+          <h1 className="mt-4 max-w-4xl animate-fade-up text-4xl font-semibold leading-[1.08] md:text-6xl">
+            Vidhyasagar Institute of <span className="italic text-gold">Professional Studies</span>
           </h1>
           <p className="mt-6 max-w-xl animate-fade-up text-lg text-primary-foreground/85 md:text-xl">{SITE.tagline}</p>
           <div className="mt-10 flex flex-wrap gap-4 animate-fade-up">
@@ -55,14 +55,14 @@ function Index() {
             <img src={library} alt="Students reading in library" loading="lazy" width={1200} height={912} className="mt-12 aspect-[3/4] rounded-2xl object-cover" />
           </div>
           <div>
-            <SectionTitle eyebrow="Welcome to SVC" title="Where learning meets values" />
+            <SectionTitle eyebrow="Welcome to VIPS" title="Where learning meets values" />
             <p className="text-muted-foreground leading-relaxed">
               Since {SITE.established}, {SITE.name} has been a trusted centre of learning in Khategaon. Through quality
               undergraduate and postgraduate programmes, we prepare young people for careers, competitive exams and responsible citizenship.
             </p>
             <blockquote className="mt-8 border-l-4 border-gold pl-5">
               <p className="font-display text-lg italic text-primary">“Our aim is to help every student grow into a confident, responsible and caring citizen.”</p>
-              <footer className="mt-2 text-sm font-semibold text-muted-foreground">— {SITE.principal}, Principal</footer>
+              <footer className="mt-2 text-sm font-semibold text-muted-foreground">— {SITE.director}, Director</footer>
             </blockquote>
             <Link to="/about" className="btn-navy mt-8">Read our story <ArrowRight className="h-4 w-4" /></Link>
           </div>
@@ -70,7 +70,7 @@ function Index() {
       </Section>
 
       <Section muted>
-        <SectionTitle center eyebrow="Why SVC" title="A complete education" text="Academics, activities and care — balanced for every student." />
+        <SectionTitle center eyebrow="Why VIPS" title="A complete education" text="Academics, activities and care — balanced for every student." />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <FeatureCard icon={<BookOpen />} title="Degree Programmes" text="University-recognised courses in Arts, Commerce, Science and Computers." />
           <FeatureCard icon={<FlaskConical />} title="Hands-on Learning" text="Laboratories and projects that turn concepts into understanding." />
@@ -87,7 +87,7 @@ function Index() {
           <div className="absolute inset-0 bg-hero-overlay" />
           <div className="relative max-w-xl p-10 md:p-16">
             <p className="eyebrow">Admissions Open</p>
-            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">Build your future at SVC</h2>
+            <h2 className="mt-3 text-3xl font-semibold md:text-5xl">Build your future at VIPS</h2>
             <p className="mt-4 text-primary-foreground/80">Enquire today for undergraduate and postgraduate courses.</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link to="/admissions" className="btn-gold">Apply for Admission</Link>

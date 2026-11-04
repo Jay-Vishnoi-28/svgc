@@ -13,7 +13,7 @@ export const Route = createFileRoute("/admissions")({
 const STEPS = ["Submit an enquiry online or visit the college office", "Collect and fill the admission form", "Submit required documents", "Document verification / counselling (as applicable)", "Confirmation and fee deposit"];
 const DOCS = ["Class 12 / graduation mark sheets", "Transfer Certificate (TC) & Migration Certificate", "Caste / income certificate (if applicable)", "Recent passport-size photographs", "Aadhaar card of student and parents", "Address proof"];
 const FAQ = [
-  ["Which courses are admissions open for?", "SVC offers undergraduate and postgraduate courses. Please contact the college office to confirm seat availability."],
+  ["Which courses are admissions open for?", "VIPS offers undergraduate and postgraduate courses. Please contact the college office to confirm seat availability."],
   ["Which university is the college affiliated to?", "Please contact the college office for affiliation details."],
   ["What is the fee structure?", "Please contact the college office for the current fee structure."],
   ["Is transport available?", "Please contact the college office for transport routes and availability."],
@@ -23,7 +23,7 @@ const FAQ = [
 function Admissions() {
   return (
     <>
-      <PageHero eyebrow="Admissions" title="Begin your journey with SVC" text="Undergraduate & Postgraduate Courses" />
+      <PageHero eyebrow="Admissions" title="Begin your journey with VIPS" text="Undergraduate & Postgraduate Courses" />
       <Section>
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
