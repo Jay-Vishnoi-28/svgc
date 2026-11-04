@@ -17,7 +17,7 @@ function Index() {
   return (
     <>
       <section className="relative min-h-[88vh] overflow-hidden text-primary-foreground">
-        <img src={hero} alt="SVPS campus with students" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover" />
+        <img src={hero} alt="SVC campus with students" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-hero-overlay" />
         <div className="container-x relative flex min-h-[88vh] flex-col justify-center py-24">
           <p className="eyebrow animate-fade-up">Est. {SITE.established} · Undergraduate & Postgraduate · Khategaon</p>
@@ -55,7 +55,7 @@ function Index() {
             <img src={library} alt="Students reading in library" loading="lazy" width={1200} height={912} className="mt-12 aspect-[3/4] rounded-2xl object-cover" />
           </div>
           <div>
-            <SectionTitle eyebrow="Welcome to SVPS" title="Where learning meets values" />
+            <SectionTitle eyebrow="Welcome to SVC" title="Where learning meets values" />
             <p className="text-muted-foreground leading-relaxed">
               Since {SITE.established}, {SITE.name} has been a trusted centre of learning in Khategaon. Through quality
               undergraduate and postgraduate programmes, we prepare young people for careers, competitive exams and responsible citizenship.
@@ -70,13 +70,13 @@ function Index() {
       </Section>
 
       <Section muted>
-        <SectionTitle center eyebrow="Why SVPS" title="A complete education" text="Academics, activities and care — balanced for the whole child." />
+        <SectionTitle center eyebrow="Why SVC" title="A complete education" text="Academics, activities and care — balanced for every student." />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <FeatureCard icon={<BookOpen />} title="Degree Programmes" text="University-recognised courses in Arts, Commerce, Science and Computers." />
           <FeatureCard icon={<FlaskConical />} title="Hands-on Learning" text="Laboratories and projects that turn concepts into understanding." />
           <FeatureCard icon={<Trophy />} title="Sports & Activities" text="Sports, debates, quizzes, music, dance, art and cultural events." />
           <FeatureCard icon={<Users />} title="Dedicated Teachers" text="Qualified professors who mentor students in and beyond the classroom." />
-          <FeatureCard icon={<Award />} title="Values & Discipline" text="Character, respect and responsibility at the heart of school life." />
+          <FeatureCard icon={<Award />} title="Values & Discipline" text="Character, respect and responsibility at the heart of college life." />
           <FeatureCard icon={<Bus />} title="Safe Campus" text="A secure, supportive campus for students to learn and thrive." />
         </div>
       </Section>
